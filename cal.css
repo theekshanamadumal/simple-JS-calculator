@@ -24,15 +24,15 @@ body, html {
 
 
 .display{
-background-color:#FF0509;
-height: 140px;
-border-top-left-radius:  14px; 
-border-top-right-radius: 14px;
-padding: 40px 0;
+    background-color:#FF0509;
+    height: 140px;
+    border-top-left-radius:  14px; 
+    border-top-right-radius: 14px;
+    padding: 40px 0;
 }
 
 .keypad{
- padding: 10% 5% 0; 
+    padding: 10% 5% 0; 
 }
 
 .row{
