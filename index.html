@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cal js</title>
+    <link rel="stylesheet" href="cal.css">
+    <script type="text" src="./cal.js"></script>
+</head>
+<body>
+    <script>
+        function saveOperation(result){
+            form.displayText.value=result
+        }
+
+        function calculate() {
+            form.displayText.value=eval(form.value1.value+form.displayText.value+form.value2.value)
+        }
+    </script>
+
+    <div class="top">
+        simple calculator using JavaSctipt
+    </div>
+    <div class="container">
+        <form name="form">
+        <div class="display">
+            <input id="displayText" type="text" placeholder="0">
+        </div>
+
+        <div class="keypad">
+            <div class="row">
+                <input type="text" name="value1" placeholder="enter value 1">
+                <input type="button" value="+" onclick="saveOperation(this.value)">
+                <input type="button" value="-" onclick="saveOperation(this.value)">
+            </div>
+            <div class="row">
+                <input type="text" name="value2" placeholder="enter value 2" >
+                <input type="button" value="/"  onclick="saveOperation(this.value)">
+                <input type="button" value="*"  onclick="saveOperation(this.value)">
+            </div>
+            <div class="row">
+                <input type="button" id="equalBtn" value="=" onclick="calculate()">
+            </div>
+        </div>
+        </form>
+    </div>
+    <div class="bottom">made with  &#9825; by theekshana.
+    </div>
+    
+</body>
+</html>
